@@ -1,1 +1,2 @@
+pvporcupine==3.0.1
 vosk==0.3.45
