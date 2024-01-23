@@ -1,5 +1,5 @@
-# Alfred
+# SpeechRecognizer
 
-Voice assistant
+Speech to text utility
 
 Python 3.11.6
