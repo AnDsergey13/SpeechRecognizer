@@ -42,11 +42,11 @@ python main.py
 ```
 
 #### Working with the utility
-1. Closing the utility. 
-1.1 `Ctrl + C` - when launched in terminal
-1.2 Or manually kill the process in the task manager. Because it runs in an endless loop
-2. Starting Voice Recognition `Alt + R` (sound plays when starting)
-3. Stop voice recognition `Ctrl + V` (sound plays when stopped)
+- Closing the utility. 
+	- `Ctrl + C` - when launched in terminal
+	- Or manually kill the process in the task manager. Because it runs in an endless loop
+- Starting voice recognition `Alt + R` (sound plays when starting)
+- Stop voice recognition `Ctrl + V` (sound plays when stopped)
 
-- If you do not speak for a long time, a reminder sound will be played that the utility is working in voice recognition mode.
-- To restart voice recognition, you need to press `Alt + R`
++ If you do not speak for a long time, a reminder sound will be played that the utility is working in voice recognition mode.
++ To restart voice recognition, you need to press `Alt + R`
