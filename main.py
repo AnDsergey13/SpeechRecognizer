@@ -1,11 +1,8 @@
-from pvrecorder import PvRecorder
 import vosk
 import pyaudio
 import json
 from pynput import keyboard
-import pyautogui
 import pyperclip
-import time
 
 # https://github.com/alphacep/vosk-space/blob/master/models.md
 model_path = "model/vosk-model-small-ru-0.22"
