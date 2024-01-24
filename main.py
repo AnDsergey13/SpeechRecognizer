@@ -17,7 +17,7 @@ def speech_recognition():
 	global work
 
 	# Воспроизводим звук запуска прослушки голоса
-	play_audio("sound/on_2.wav")
+	play_audio("sound/on.wav")
 	# Очищаем буфер, чтобы надиктованный текст не смешался с данными (при первом запуске), которые были ранее в него записаны
 	pyperclip.copy("")
 
@@ -45,7 +45,7 @@ def speech_recognition():
 					# print("Empty")
 					# Воспроизводим звук, если голос не был услышан (например, когда человек молчит)
 					# Так же служит напоминанием, что программа работает
-					play_audio("sound/on_1.wav")
+					play_audio("sound/silence.wav")
 
 def exit_func():
 	global work
