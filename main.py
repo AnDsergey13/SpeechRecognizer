@@ -90,13 +90,15 @@ lc_th.start()
 
 
 start_keys = keyboard.HotKey(keyboard.HotKey.parse('<alt>+r'), speech_recognition)
+print("___ Для завершения работы программы, нажмите Ctrl + C ___")
 print("Для начала распознавания речи нажмите Alt + R")
-with keyboard.Listener(
-		on_press=for_canonical(start_keys.press),
-		on_release=for_canonical(start_keys.release)) as l:
-	l.join()
-
-print("\nЗавершение программы")
-stream.stop_stream()
-stream.close()
-p.terminate()
+try:
+	with keyboard.Listener(
+			on_press=for_canonical(start_keys.press),
+			on_release=for_canonical(start_keys.release)) as l:
+		l.join()
+except KeyboardInterrupt:
+	print("\nЗавершение программы")
+	stream.stop_stream()
+	stream.close()
+	p.terminate()
